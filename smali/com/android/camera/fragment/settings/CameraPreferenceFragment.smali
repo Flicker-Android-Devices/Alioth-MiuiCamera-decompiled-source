@@ -1752,7 +1752,7 @@
     invoke-virtual {v8, v13}, Lcom/android/camera/SettingUiState;->toString(Ljava/lang/String;)Ljava/lang/String;
 
     .line 63
-    iget-boolean v2, v8, Lcom/android/camera/SettingUiState;->isNeed:Z
+    const/4 v2, 0x0
 
     if-eqz v2, :cond_1e
 
