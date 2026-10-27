@@ -150,31 +150,8 @@
 
     sput-boolean v1, LOooO0O0/OooO0Oo/OooO00o/OooO0O0;->OooO0OO:Z
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
-    const-string/jumbo v3, "ro.mi.os.version.name"
-
-    .line 4
-    invoke-static {v3, v1}, Lcom/xiaomi/camera/util/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string/jumbo v3, "ro.miui.ui.version.name"
-
-    invoke-static {v3, v1}, Lcom/xiaomi/camera/util/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_1
-
-    move v1, v2
-
-    goto :goto_1
-
-    :cond_1
-    move v1, v0
-
-    :goto_1
     sput-boolean v1, LOooO0O0/OooO0Oo/OooO00o/OooO0O0;->OooO0Oo:Z
 
     .line 5
